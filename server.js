@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5001;
 
 require('./db/database');
 
-app.use(cors({ origin: ['http://localhost:5173','https://av-aimmigration-frontend.vercel.app/'], credentials: true }));
+app.use(cors({ origin: ['http://localhost:5173','https://av-aimmigration-frontend.vercel.app'], credentials: true }));
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
